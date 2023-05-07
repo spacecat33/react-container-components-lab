@@ -17,9 +17,10 @@ export default class LatestMovieReviewsContainer extends Component {
       fetch(`https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=${NYT_API_KEY}`)
         .then(res => res.json())
         .then(data => {
-          const reviews = data.results
-          console.log(reviews)
-          this.setState({ reviews: reviews })
+        //   const reviews = data.results
+        //   console.log(reviews)
+        //   this.setState({ reviews: reviews })
+        console.log(data)
         })
     }
   
